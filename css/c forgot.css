@@ -1,0 +1,50 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+}
+
+.wrapper{
+    position: relative;
+    width: 500px;
+    height: 550px;
+    background-color: rgb(44, 23, 79);
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    padding:20px;
+}
+.wrapper h1{
+    font-size:2em;
+    color: rgb(241, 240, 245);
+    text-align:center;
+}
+
+
+.input-box{
+    position: relative;
+    width: 130%;
+    margin: 40px;
+    height: 50px;
+    
+}
+
+.input-box input{
+    width: 60%;
+    height: 45px; 
+    margin:15px;
+    
+   
+}
+
+.btn{
+    width: 20%;
+    height: 35px;
+    margin:15px;
+    background-color:antiquewhite;
+    color: rgb(12, 1, 1);
+    font-size: 20px;
+}

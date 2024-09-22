@@ -1,0 +1,96 @@
+body{
+    --color-primary: #3498db;
+    --color-primary-dark: #2980b9;
+    --color-primary-light: #ecf0f1;
+    --color-error: #e74c3c;
+    --color-success: #2ecc71;
+    --color-success-dark: #27ae60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 0;
+    height: 100vh;
+    background-position: absolute;
+    background-image: url('../img/b_c_login.jpg');
+    transition: background-color 0.3s ease;
+}
+    
+.login{
+    width: 800px;
+    height: 560px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px  rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    
+}
+.login >img{
+    background-size: auto;
+    width: 50%;
+    height: auto;
+}
+
+form{
+    background: white;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    opacity: 90%;   
+}
+h1{
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+label{
+    color: rgba(100, 100, 100);
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+input{
+    width: 90%;
+    border-radius: 20px;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+input:focus{
+    border-bottom: 2px solid var(--color-primary);
+}
+.btn{
+    margin-top: 20px;
+    width: 150px;
+    border: none;
+    background: #333;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;  
+    padding: 10px;
+    box-shadow: 2px 2px 0px var(--color-primary-dark);
+}
+.btn:hover{
+    background:var(--color-primary-dark);
+    color: #333; 
+} 
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+label.login-register {
+    float: left; 
+}
+
+.login-register {
+    clear: both;
+}

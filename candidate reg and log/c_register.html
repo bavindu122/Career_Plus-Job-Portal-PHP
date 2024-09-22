@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Candidate Register</title>
+    <link rel="icon" href="../img/career-plus-logo-v.png" type="image/icon-type" />
+    <link rel="stylesheet" href="../css/c_register.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="form-box">
+            <h1>Create Account</h1>
+            <form action="dbh/c-register.php" method="post">
+                <p class="Registered successfully"></p>
+                <div class="input-box">
+                    <input type="text" placeholder=" First Name" name="firstName" required>
+                    <input type="password" placeholder="Password" name="Password" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder=" Last Name" name="lastName" required>
+                    <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+                    <p class="password dose not match"></p>
+                </div>
+
+                <div class="input-box">
+                    <input type="email" placeholder="Email" name="Email" required>
+                    <input type="text" placeholder="Phone Number" name="phoneNumber" required>
+                </div>
+
+                <div class="input-box">
+                    <div class="dates">
+                        <div class="row">
+                            <lable>
+                                <p>Date of birth</p>
+                            </lable>
+                            <input type="date" name="dBay" max="2015-01-01" min="1940-01-01" required>
+                        </div>
+                        <div class="row">
+                            <label>
+                                <p>Passing Year</p>
+                            </label>
+                            <input type="date" name="passYear" id="passYear" min="1940-01-01" required>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="input-box">
+                    <input type="text" placeholder="Age" name="Age" required>
+                    <input type="text" placeholder="Highest Qualification" name="Quali" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="Address" name="address" required>
+                    <input type="text" placeholder="Stream" name="stream" required>
+                </div>
+
+                <div class="input-box">
+                    <input type="text" placeholder="City" name="city" required>
+                    <input type="text" placeholder="State" name="state" required>
+                </div>
+                <div class="input-box">
+                    <div class="intro-skill">
+                        <textarea name="intoduction" rows="6" cols="33" placeholder="Brief Introduction about you"
+                            required></textarea>
+                        <br>
+                        <textarea name="skills" rows="6" cols="33" placeholder="Enter skills" name="skills"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Designation" name="designation">
+                </div>
+                <div class="confirm">
+                    <input type="checkbox" required>
+                    <p><b>I hereby declare the above information provided is true and
+                            correct</b></p>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn" value="upload">Register</button>
+                </div>
+            </form>
+        </div>
+        <img src="../img/c_register.jpg" alt="register img">
+    </div>
+
+    <script>
+        // Get the current date
+        var currentDate = new Date();
+
+        // Format the current date to YYYY-MM-DD
+        var year = currentDate.getFullYear();
+        var month = String(currentDate.getMonth() + 1).padStart(2, '0');
+        var day = String(currentDate.getDate()).padStart(2, '0');
+        var formattedDate = year + '-' + month + '-' + day;
+
+        // Set the max attribute of the date input field
+        document.getElementById('passYear').max = formattedDate;
+    </script>
+</body>
+
+
+</html>
